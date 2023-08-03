@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+      RewriteEngine On
+RewriteCond %{HTTP_HOST} ^yourdreamschool.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www.yourdreamschool.com$
+RewriteRule (.*)$ https://yourdreamschool.fr/en/$1 [R=301,L]
+</IfModule>
+
